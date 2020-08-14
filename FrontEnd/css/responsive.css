@@ -1,0 +1,39 @@
+/* 1. New Grid System */
+
+.col-sms-1,
+.col-sms-2,
+.col-sms-3,
+.col-sms-4,
+.col-sms-5,
+.col-sms-6,
+.col-sms-7,
+.col-sms-8,
+.col-sms-9,
+.col-sms-10,
+.col-sms-11,
+.col-sms-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (max-width: 1024px) {
+    
+  }
+  
+  @media (max-width: 768px) {
+    
+  }
+  
+  @media (max-width: 479px) {
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+
+
+}

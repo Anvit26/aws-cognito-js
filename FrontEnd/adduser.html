@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Admin User Add</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="js/jquery.min.js"></script>
+		<script src="./assets/js/amazon-cognito-auth.min.js"></script>
+		<script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.16.min.js"></script>
+		<script src="./assets/js/amazon-cognito-identity.min.js"></script>
+		<script src="./assets/js/config.js"></script>
+		<script src="./assets/js/adduser.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/datatables.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" type="text/css" href="css/datatables.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<section class="main__section">
+			<body class="align">
+				<div class="logo">
+				</div>
+				<br>
+				<div class="grid signup">
+					<form  class="form login">
+						<h1 class="h3 mb-0 " style="text-align:center;" id="titleheader"></h1>
+						<h1 class="h3 mb-0" style="text-align:center;" id="subtitleheader">Admin User Create</h1>
+						<div class="form__field">
+							<input id="admin__username" type="text" name="username" class="form__input" placeholder="Full Name" required>
+						</div>
+						<div class="form__field">
+							<input id="admin__emailaddress" type="text" name="email" class="form__input" placeholder="Email Address" >
+							<p class="form_error"></p>
+						</div>
+						<div class="form__field">
+							<input id="admin__mobilenumber" type="text" name="mobile number" class="form__input" placeholder="Mobile Number" >
+							<p class="form_error"></p>
+						</div>
+						<div class="form__field">
+							<input id="admin__usertype" type="text" name="user type" class="form__input" placeholder="User Type" >
+							<p class="form_error"></p>
+						</div>
+							<p class="form_error" id="form_error"></p>
+						<div class="form__field">
+							<input type="submit" class="btn" onclick="addUser()" value="Add User">
+						</div>
+					</form>
+				</div>
+		</section>
+	</body>
+</html>

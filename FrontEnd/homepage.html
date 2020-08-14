@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home Page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="./assets/js/amazon-cognito-identity.min.js"></script>
+		<script src="./assets/js/config.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/datatables.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/datatables.min.css"/>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/passwordvalidation.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="js/sweetalert.min.js"></script>
+		<script src="./assets/js/home.js"></script>
+	</head>
+	<body class="align">
+		<div id="ajaxLoader" style="display:none;">
+			<div class="custom-loader"></div>
+		</div>
+		<section id="main-section" class="datatables_page">
+			<div class="container-full header__logo">
+				<div class="text-right forgot__password">
+					<p class="logout__button">
+						<input type="button" class="btn" style="color: cornsilk;" onclick="signOut()" value="Logout"></input>
+					</p>
+				</div>
+				<br>
+				<div class="text-right forgot__password">
+					<p class="logout__button">
+						<a href="#" data-target="#pwdModal" data-toggle="modal">
+							<input type="button" class="btn" style="color: cornsilk;" value="Change password"></input>
+						</a>
+					</p>
+				</div>
+			</div>
+			<div id="pData" style="text-align: right;"></div>
+			<h2 class="text--center" style="padding: 20px 0;">Welcome,&nbsp;<span id="email_value"> </span></h2>
+			<div class="container">
+				<div class="row table__wrapper" id="table__wrapper">
+					<div class="col-xs-12" id="my_tab">
+
+					</div>
+					<input type="text" id="allredyEventstrt" value="0" style="display:none">
+				</div>
+			</div>
+			<!--modal Start-->
+				<div id="pwdModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<h1 class="text-center">Change Your Password</h1>
+							</div>
+							<div class="modal-body">
+								<div class="col-md-12">
+									<div class="panel panel-default">
+										<div class="panel-body">
+											<div class="text-center">
+												<p></p>
+												<div class="panel-body">
+													<fieldset>
+														<div class="form-group">
+															<input class="form-control input-lg" id="code_input" placeholder="Enter OTP" name="password" type="password">
+														</div>
+														<div class="form-group">
+															<input class="form-control input-lg" id="forgot_pass_input" placeholder="Enter New Password" name="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+														</div>
+													</fieldset>
+													<div id="message">
+														<h5>Password must contain the following:</h5>
+														<p id="number" class="invalid">Atleast <b>one </b>number &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+														<p id="letter" class="invalid">A <b>lowercase </b>letter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+														<p id="capital" class="invalid">A <b>uppercase </b>letter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+														<p id="splchar" class="invalid">A <b>Spacial </b>character &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+														<p id="length" class="invalid">Minimum <b>10 </b>characters</p>
+													</div>
+													<p class="form_error" id="change_message"></p>
+														<fieldset>
+															<input class="btn btn-lg btn-primary btn-block" id='mybtn' onclick="inputVerificationCode()" value="Change Password" type="submit" disabled>
+														</fieldset>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<div class="col-md-12">
+									<button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Model End-->
+				<script src="./js/passwordvalidation.js"></script>
+		</section>
+	</body>
+</html>
