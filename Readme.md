@@ -17,4 +17,12 @@ In following repository you will get various AWS Cognito features implimentd usi
 1. Cognito User Pool Creation:-<br/>
     1.1. Go to cognito console, and click on create user pool button<br/>
     1.2 Enter Pool Name, and click on step through settings<br/>
-    1.3
+    1.3 ![Step 2](http://image/User Pools(1).png)<br/>
+    1.4 ![Step 3](http://image/User Pools(2).png)<br/>
+    1.5 ![Step 4](http://image/User Pools(3).png)<br/>
+    1.6 ![Step 5](http://image/User Pools(4).png)<br/>
+    1.7 ![Step 6](http://image/User Pools(5).png)<br/>
+    1.8 ![Step 7](http://image/User Pools(6).png)<br/>
+    1.9 ![Step 8](http://image/User Pools(7).png)<br/>
+    1.10 ![Step 9](http://image/User Pools(8).png)<br/>
+    1.11 ![Step 10](http://image/User Pools(9).png)<br/>
