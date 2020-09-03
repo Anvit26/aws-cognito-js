@@ -14,7 +14,7 @@ exports.handler = function(event, context, callback) {
     eventdata = event.bodyjson;
     userType = eventdata.usertype;
     var params = {
-        UserPoolId: 'us-east-1_RnjfgkJhP',
+        UserPoolId: '############',
         Username: eventdata.email, 
         DesiredDeliveryMediums: ["EMAIL"],
         //TemporaryPassword: eventdata.temppass,
