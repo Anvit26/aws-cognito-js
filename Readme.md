@@ -13,7 +13,8 @@ In following repository you will get various AWS Cognito features implimentd usi
 8. Admin User Create
 9. Force Change Password
 10. Custom Attribute   
-<br/>
+<!--<br/>-->
+
 1. Cognito User Pool Creation:-<br/>
     1.1. Go to cognito console, and click on create user pool button<br/>
     1.2 Enter Pool Name, and click on step through settings<br/>
