@@ -38,7 +38,7 @@ function addUser(){
     //console.log(data);
     $.ajax({
       type: "POST",
-      //url : "https://oalrfl20t0.execute-api.us-east-1.amazonaws.com/dev/cognito?usermailId="+usermailId,
+      url : "API GATEWAY URL", ##CHANGE THIS
       dataType: "json",
       crossDomain: "true",
       contentType: "application/json; charset=utf-8",
