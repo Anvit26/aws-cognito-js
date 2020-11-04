@@ -8,8 +8,6 @@ var cognitoUser = userPool.getCurrentUser();
 
 function signOut() {
     if (cognitoUser != null) {              
-            stopfun();
-            vmStop();
             cognitoUser.signOut();
             window.location.href = './signin.html';
     }
