@@ -1,3 +1,19 @@
+**Code Walk Through**<br/>
+-Client Side Code for Cognito SDK is in **'aws-cognito-js/FrontEnd/assets/js/'** where <br/>
+    -Sign-up function in **aws-cognito-js/FrontEnd/assets/js/register.js**<br/>
+    -Sign-in function in **aws-cognito-js/FrontEnd/assets/js/signin.js**<br/>
+    -Forgot password function in **aws-cognito-js/FrontEnd/assets/js/forgot.js**<br/>
+    -**signOut, getSession, getSession** in **aws-cognito-js/FrontEnd/assets/js/home.js**<br/>
+    -change password in **aws-cognito-js/FrontEnd/assets/js/change-password.js**<br/>
+    -admin user creation in **aws-cognito-js/FrontEnd/assets/js/adduser.js**<br/>
+
+-Our code has two lambda function in **aws-cognito-js/Lambda/**<br/>
+    -Here you have to also apply **IAM Policy**.<br/>
+    -To sync user in local data base here we are using DynamoDB Table **aws-cognito-js/Lambda/sync/index.js**.<br/>
+    -To add admin user function **aws-cognito-js/Lambda/adduser/index.js**.<br/>
+
+ 
+
 **Amazon Cognito Identity**<br/>
 Amazon Cognito is service for user management and user authentication, to add user sign-up and sign-in to your mobile and web apps. Your User Pool in Amazon Cognito is a fully managed user directory that can scale to hundreds of millions of users, so you don't have to worry about building, securing, and scaling a solution to handle user management and authentication.
 
